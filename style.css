@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #16222a, #3a6073); 
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    background: linear-gradient(to right, #16222a, #3a6073);
+    color: white;
+    max-width: 600px;
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Padding for the container */
+    border-radius: 10px;
+}
+
+.quiz-container:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-heading {
+    text-align: center;
+    color: #b5bcd3;
+    font-size: 40px; 
+       margin-bottom: 40px; /* Keep this for spacing between heading and quiz */
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px; /* Keep this for spacing below h2 */
+}
+
+.question {
+    font-weight: bold;
+    font-size: 20px;
+    color: #39b9c7;
+}
+#quiz{
+    font-size: 20px;
+}
+.options {
+    margin-bottom: 20px; /* Maintain some spacing at the bottom of options */
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px; /* Keep spacing for readability */
+}
+
+#submit-btn, #retry-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 30%;
+}
+#submit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 30%;
+}
+
+ #retry-btn:hover {
+    background-color: #218838;
+}
+#submit-btn:hover {
+    background-color: #218838;
+}
+
+#results {
+    text-align: center;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fact {
+    font-size: 16px;
+    margin-top: 10px; /* Maintain some spacing for the fact */
+}

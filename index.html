@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Footprint Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <div class="navbar-left">
+        <ul class="nav-items">
+          <li class="nav-item"><a href="index.html">About</a></li>
+          <li class="nav-item"><a href="index.html">Calculator</a></li>
+          <li class="nav-item"><a href="index.html">Chart</a></li>
+          <li class="nav-item">
+            <a href="#advisory">Advisory <i class="fas fa-lightbulb"></i></a> 
+          </li>
+          <li class="nav-item">
+            <a href="awareness.html">Awareness Quiz </a> 
+          </li>
+          <!-- Advisory Icon -->
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <button   class="login-btn"> <a href="sign-in.html">Login</a></button>
+        <button class="register-btn"><a href="sign-up.html">Register</a></button>
+      </div>
+    </nav>
+    <img src="CARBON-removebg-preview.png" alt="Logo" class="logo" />
+
+
+    <!-- About Section -->
+    <!-- About Section -->
+<div class="heading">
+  <h1>CARBON  CALCULATOR</h1>
+  <p>Show your care for the environment and communities across the World by Carbon Offsetting.
+  </p>
+</div>
+
+    <section id="about" class="about-section">
+      <!-- About Content Box -->
+      <div class="about-content box">
+        <h1>About Carbon Footprint Tracker</h1>
+
+
+         <p  style="background-color:rgb(170, 170, 216);  border-radius: 5px; color: black;padding: 10px;font-weight: bold;">
+          At Carbon footprint app , we aim to help individuals take control of their carbon footprint. Climate change is a global challenge, and small changes in our habits can make a big difference. Our app provides tools to calculate, track, and reduce carbon emissions, encouraging everyone to live more sustainably and contribute to a healthier planet.
+        </p>
+
+
+        <p style="background-color: #efe79c;border-radius: 5px; color: black;padding: 10px;font-weight: bold;">
+          Tracking your carbon footprint is key to making eco-friendly decisions. Every activity—like driving, using electricity, or managing waste—leaves a carbon impact. By understanding your footprint, you can adopt greener habits and make a positive impact on the environment. Our app makes it simple and engaging to track your emissions.
+        </p>
+        <p  style="background-color: #fbb4a4;  border-radius: 5px; color: black;padding: 10px;font-weight: bold;">
+          We believe in inspiring action. In addition to tracking your carbon footprint, this carbon footprint application offers practical tips to reduce your emissions. Whether it’s using public transport, saving energy, or reducing waste, we guide you on how to make small, sustainable choices for a greener future.
+        </p>
+       
+      </div>
+
+      <!-- Advisory Section -->
+      <aside class="advisory-section box">
+        <h2>How to Reduce Carbon Emissions</h2>
+        <ul>
+          <li>(a) Use energy-efficient appliances.</li>
+          <li>(b) Reduce car use by walking, biking, or carpooling.</li>
+          <li>(c) Opt for renewable energy sources like solar and wind.</li>
+          <li>(d) Minimize meat consumption in your diet.</li>
+          <li>(e) Reduce, reuse, and recycle to lower waste.</li>
+          <li>(f) Plant trees and support reforestation projects.</li>
+          <li>(g) Choose energy-efficient lighting, like LEDs.</li>
+          <li>(h) Unplug electronic devices when not in use to save energy. </li>
+          <li>(i) Support local and sustainable products to reduce emissions from transportation.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Carbon Footprint Calculator -->
+    <section id="calculator" class="calculator-section">
+      <h2>Carbon Footprint Calculator</h2>
+      <div class="calculator">
+        <label for="energy">Monthly Energy usage (kWh):</label>
+        <input
+          type="number"
+          id="electricity"
+          placeholder="Enter your energy usage"
+        />
+
+        <label for="transport">Transport distance (km):</label>
+        <input
+          type="number"
+          id="transport"
+          placeholder="Enter distance traveled"
+        />
+        <!-- <input id="transport" type="number" placeholder="Transport (kg)">
+        <input id="electricity" type="number" placeholder="Electricity (kg)">
+        <input id="waste" type="number" placeholder="Waste (kg)"> -->
+
+        <label for="food">Food Wastage (kg):</label>
+        <input type="number" id="waste" placeholder="Enter food consumption" />
+
+        <button id="calculate-btn">Calculate</button>
+
+        <div id="result"></div>
+      </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section id="chart" class="chart-section">
+      <h2>Your Carbon Footprint Breakdown</h2>
+      <canvas id="footprintChart"></canvas>
+    </section>
+
+  
+    <section id="faq" class="faq-section">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">Purpose of the Web App</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">This tool helps you track your carbon emissions from daily activities, such as transport, electricity usage, and waste generation. Its goal is to raise awareness about individual carbon footprints and encourage more sustainable living.</p>
+      </div>
+  
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">Why carbon footprint?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">Your carbon footprint reflects the total greenhouse gases you produce, which contributes to global climate change. By understanding your footprint, you can take steps to reduce it and live a more eco-friendly life.</p>
+      </div>
+  
+      <!-- <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">What features does this calculator offer?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">Our calculator provides:
+              <ul>
+                  <li>Real-time calculations of your carbon emissions.</li>
+                  <li>Personalized advisory messages based on your emissions.</li>
+                  <li>Visual representations of your footprint with pie charts.</li>
+                  <li>Tips on reducing your carbon footprint.</li>
+              </ul>
+          </p>
+      </div> -->
+  
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">How it works?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">Simply enter your daily transport distance, electricity usage, and waste generation. The app will calculate your total emissions and display your carbon footprint with suggestions for reducing it.</p>
+      </div>
+  
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">The Science behind the calculations</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">The app uses standard conversion factors to calculate CO₂ emissions. For example, 1 km of travel by car produces 0.12 kg of CO₂, and using 1 kWh of electricity produces 0.233 kg of CO₂.</p>
+      </div>
+  
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">What should I do if my carbon footprint is high?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">If your footprint is high, the app provides personalized advice. You can reduce your emissions by using public transport, cutting down on electricity usage, and recycling waste.</p>
+      </div>
+  
+      <!-- <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">What are some quick ways to reduce my carbon footprint?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">Here are some tips:
+              <ul>
+                  <li>Use energy-efficient appliances.</li>
+                  <li>Carpool or use public transportation.</li>
+                  <li>Recycle and compost waste.</li>
+                  <li>Reduce your electricity and water usage.</li>
+              </ul>
+          </p>
+      </div> -->
+  
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">Who created this tool?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">This carbon footprint calculator was developed by "Compile Crew" Team, a team of passionate developers aiming to promote sustainability through technology.</p>
+      </div>
+  
+      <div class="faq-item">
+          <div class="faq-question-wrapper">
+              <h3 class="faq-question">What are the future plans for this web app?</h3>
+              <span class="toggle-icon">+</span>
+          </div>
+          <p class="faq-answer">We plan to add more detailed carbon footprint categories, such as food consumption and fashion, so users can get a more comprehensive view of their environmental impact.</p>
+      </div>
+  </section>
+  
+  
+  
+    <!-- Footer -->
+    <img src="WhatsApp_Image_2024-10-10_at_22.50.59-removebg-preview.png" style="height: 60px; width: 100px;margin-bottom: -65px;margin-left: 10px;" alt="">
+    <footer class="footer">
+      <p>&copy; 2024 Compile Crew || All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Awareness Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="icon" href="WhatsApp Image 2024-10-10 at 22.50.59.jpeg" type="image/x-icon" />
+
+</head>
+<body>
+
+
+    <nav class="navbar" style="height: 80px;">
+        <div class="navbar-left" style="margin-left: -100px;">
+          <img src="logo.png" alt="Logo" class="logo" />
+          <ul class="nav-items">
+            <li class="nav-item"><a href="index.html">About</a></li>
+            <li class="nav-item"><a href="index.html">Calculator</a></li>
+            <li class="nav-item"><a href="index.html">Chart</a></li>
+            <li class="nav-item">
+              <a href="index.html">Advisory <i class="fas fa-lightbulb"></i></a> 
+            </li>
+            <li class="nav-item">
+              <a href="awareness.html">Awareness Quiz </a> 
+            </li>
+            <!-- Advisory Icon -->
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <button   class="login-btn"> <a href="sign-in.html">Login</a></button>
+          <button class="register-btn"><a href="sign-up.html">Register</a></button>
+        </div>
+      </nav>
+      <img src="CARBON-removebg-preview.png" alt="Logo" class="logo" style="margin-top: -145px;"/>
+
+      <h1 class="main-heading">Increase Your Knowledge About Carbon Footprint by Attempting This Quiz</h1>
+    <div class="quiz-container">
+        <!-- Main Heading -->
+
+        <!-- Quiz Section -->
+        <div id="quiz"></div>
+
+        <!-- Results Section -->
+        <div id="results" style="display: none;">
+            <p id="score"></p>
+            <p id="fact"></p>
+            <p id="correct-answer" style="font-weight: bold;"></p>
+            <div id="all-correct-answers" style="margin-top: 20px;"></div>
+        </div>
+
+        <!-- Submit/Next Button -->
+        <button id="submit-btn">Next</button>
+
+        <!-- Retry Button -->
+        <button id="retry-btn" style="display: none;">Retry Quiz</button>
+    </div>
+
+    <script src="awarenessScript.js"></script>
+</body>
+</html>
